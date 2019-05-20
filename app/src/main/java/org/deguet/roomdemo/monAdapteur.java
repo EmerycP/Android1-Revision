@@ -88,13 +88,9 @@ import java.util.List;
                 @Override
                 public void onClick(View v) {
                     if (objetActuel.quantite == 1)
-                    {
                         mDataset.remove(position);
-                    }
                     else
-                    {
                         objetActuel.quantite -= 1;
-                    }
                     notifyDataSetChanged();
                 }
             });
